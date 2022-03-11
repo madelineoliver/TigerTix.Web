@@ -1,5 +1,4 @@
-﻿@page
-@model TigerTix.Web.ViewModels.IndexViewModel
+﻿@model IndexViewModel
 @{
     ViewBag.Title = "Home Page";
 }
@@ -10,12 +9,23 @@
     <title>TigerTix: @ViewBag.Title</title>
 </head>
 <body>
-    <h1>Welcome to TigerTix!</h1>
+    <h1>Hello World</h1>
 
     <form method="post">
-        <Label>Create an account  </Label>
+
+        <label>Username:</label>
         <br />
-        <button type="submit" name="createAccount" />
+        <input type="text" name="username" />
+        <br />
+        <label>Firstname:</label>
+        <br />
+        <input type="text" name="firstname" />
+        <br />
+        <label>Lastname:</label>
+        <br />
+        <input type="text" name="lastname" />
+        <br />
+        <input type="submit" value="Store Name" />
     </form>
 
 </body>
